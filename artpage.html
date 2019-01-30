@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Art Page</title>
+    <link rel="stylesheet" href="artpage.css" type="text/css">
+    <script src="int2-checkpoints/processing.min.js"></script>
+</head>
+
+<body>
+<!--Navigation bars:Name+Links-->
+   <ul id="navbar"> 
+        <a href="index.html"><li><strong>About me</strong></li></a>
+        <a href="aboutme-howto.html"><li><strong>About Me: How To</strong></li></a>
+        <a href="artpage.html"><li><strong>Generative Art & How-To</strong></li></a>
+    </ul>
+    <!--Background design:tranparent white shade over image pattern-->
+    <div style="background-color:rgba(253, 242, 255,.825)">
+      <!--Main title of webpage-->
+      <h1 style="border: 3px solid black">Generative Art</h1>
+      <!--My Generative Art-->
+      <canvas id="output-canvas"></canvas>
+      <script src="artpage.js"></script>
+      <!--Section 1-->
+      <h2 style="border: 3px solid black">What I Created</h2>
+            <div class="how-to1" style="vertical-align:top">
+                <p style="width:85%; display:inline-block;">For this project, I created a program that uses for loops, functions, conditional statements, variables, and shapes to create generative art that conveys the emotion of sadness. My generative art shows a white rain cloud in front of a gray background. Raindrops with alternating colors of blue shades are located below the rain cloud. The final row of raindrops are temporary hidden from the screen until the computer mouse hovers over the white cloud but disappears again when the mouse moves aways from the white cloud. </p>
+            </div>
+      <!--Section 2-->
+        <h2 style="border: 3px solid black">How It Works Overall</h2>
+            <div style="text-align:center"> 
+                <p class="work">As a whole, this project works to create an interactive art piece that conveys the specific emotion of sadness. This emotion was formed through color selections of blue and gray as well as a raining scene, which are aspects generally associated with sadness. The main purpose for creating this interactive art is to incorporate basic javascript knowledge learned this interval in a webpage, using for loops, conditionals, and functions.</p>
+            </div>
+        <!--Section 2:Sub1-->
+            <div class="container"> <h3><em> For Loops </em></h3> </div>
+                <h4 style="text-align:center"> Specific Code </h4>
+                    <img class="center" style="border: 2px solid black" src="images/forloopcode.png">
+                <h4 style="text-align:center"> Result of Code </h4>
+                    <img class="center" width="700px" style="border: 2px solid black" src="images/forloopgrass.png">
+                    <p class="how">One specific aspect of my project is the use of a for loop as shown in the screenshot of the code above. This for loop was used to recreate one green triangle across the bottom of the webpage multiple times to form a row of grass within my art piece. The general syntax of a for loop is <strong>for (<em>conditions</em>) {<em>code block</em>}</strong>. Within the opening and closing parenthesis, conditions are set to instruct the for loop to only loop the code block within a specific width of the webpage. The first part of the condition is var i = 1, which sets the variable name i to have an initial value of 1. The second portion (i < width) instructs the for loop to continue looping as long as the variable i is less than the width. Lastly, the third portion (i += 10) sets the value of i to increase in intervals of 10 each time the triangle is looped. The interval value of 10 was chosen because that is the width of each grass triangle; this would prevent various triangles from overlapping. The lines of code embedded within the curly brackets (lines 98-100) are properties that categorize the grass triangle coded on line 101. The variable i is used to replace the x-coordinates of the triangle's three points while x2 and x3 coordinates have values added to i to distant each point from the others and create a triangle.</p>
+        <!--Section 2:Sub2-->
+            <div class="container"> <h3><em> Conditionals </em></h3> </div>
+                <h4 style="text-align:center"> Specific Code </h4>
+                    <img id="sub2" class="center" style="border: 2px solid black" src="images/if-elsecode.png">
+                <h4 style="text-align:center"> Result of Code </h4>
+                    <div style="display: block; text-align: center">
+                        <img class="centerimg" style="border: 2px solid black" src="images/hiddencloudimage.png">
+                        <img class="centerimg" style="border: 2px solid black" src="images/appearcloudimage.png">
+                    </div>
+                    <p class="how">A second specific portion of my code is the use of an if-else conditional as shown in the screenshot of the code above. This if-else conditional was used to program the bottom row of raindrops to appear only when the computer mouse hovers over the rain cloud and stay hidden while the mouse hovers over other positions of the webpage. This goal was achieved by creating a gray rectangle that covers the bottom row of raindrops when the mouse does not hover the rain cloud. The general syntax of an if-else conditional is <strong>if (<em>condition</em>) {<em>code block</em>} else {<em>alternative code block</em>}</strong>. Within the parentheses, the conditions of the if-statement program the gray rectangle to be drawn at the x-coordinate of 500 and y-coordinate of 500 when the computer mouse hovers over the coordinate ranges stated in the condition. When the mouse hovers over the designated area, the bottom row of raindrops becomes visible since the gray rectangle is positioned off the canvas, which is 400 by 400. An example of this scene is shown in the right image above. If the mouse does not hover over the rain cloud, the code block of the else-statement applies. The gray rectangle will be positioned at the x-coordinate of 40 and y-coordinate of 315, which will completely cover the bottom row of raindrops and keep it hidden.  An example of this scene is shown in the left image above. Altogether, the if-else conditional works to make this program interactive by allowing more raindrops to appear on the screen when the mouse hovers over the white rain cloud. </p>
+                    <p class="how">However, there is one limitation in the code. Since the rain cloud possesses an irregular shape, the conditions of the if-statement could not be set to perfectly match the area of the cloud. Instead, the coordinate ranges stated in the condition form a rectangle that is the relative area of the rain cloud. Due to this limitation, hovering over specific edges of the cloud does not program the bottom row of raindrops to appear. To ensure viewers can observe this change, it is best to hover the mouse over the center of the cloud.</p>
+        <!--Section 2:Sub3-->
+            <div class="container"> <h3><em> Functions </em></h3> </div>
+                <h4 style="text-align:center"> Specific Code </h4>
+                    <img id="sub2" class="center" style="border: 2px solid black" src="images/functiondrawcloudcode.png">
+                    <img class="center" style="border: 2px solid black" src="images/calldrawfunction.png">
+                <h4 style="text-align:center"> Result of Code </h4>
+                    <img class="center" width="400px" style="border: 2px solid black" src="images/functionimage.png">
+                    <p class="how">A third significant aspect of my generative art is the use of functions as shown in the two screenshots of the code above. This function was used to organize all the lines of code needed to create the rain cloud into a single function that could be called multiple times if needed. The general syntax of a function is <strong>function <em>functionName</em> (<em>parameters</em>) {<em>code</em>}</strong>. In order to create a function, the keyword function needs to be used and followed with a name to identify the particular function. In this case, the function is named drawCloud since as a whole, the code embedded within the curly brackets draws the white rain cloud. The white rain cloud does not appear on the webpage until the function drawCloud is called in line 85 of the second screenshot. A function is called using the general syntax <strong><em>functionName</em>();</strong>. A single function can be recalled various times if the drawing it created needs to be duplicated. This makes the usage of functions an organization method that makes coding more efficient, for the same drawings can be created easily by recalling a single function. </p>
+      <!--Section 3-->
+        <h2 style="border: 3px solid black">Choices I Made</h2>
+        <!--Section 3:Sub1-->
+            <div class="container"> <h3><em> Color Selections </em></h3> </div>
+                <h4 style="text-align:center"> Specific Code </h4>
+                    <img id="sub2" class="center" style="border: 2px solid black" src="images/dropfillcode.png">
+                    <img class="center" style="border: 2px solid black" src="images/graybackcode.png">
+                <h4 style="text-align:center"> Result of Code </h4>
+                    <img class="center" width="500px" style="border: 2px solid black" src="images/colorselectimage.png">
+                    <p class="how">One major choice I made while designing my generative art piece was the color selection. The goal of my art was to convey the emotion of sadness, so I chose a gray background  (line 20 of code) and set the fill of the raindrops to random shades of blue that are looped (line 87-89 of code). The colors of gray and blue were selected because these colors tend to be associated with neurotic or depressing feelings. These colors selections also logically relate with the scene I formed since raindrops are typically portrayed as blue and a dark, rainy sky can be displayed using the color gray. Furthermore, I decided to have random shades of blue alternate in order to make the art piece more interesting. Having the raindrops gradually increase in darkness was one method to convey a growing sadness--lighter blue is sad while darker blue is more sad.</p>
+        <!--Section 3:Sub2-->
+            <div class="container"> <h3><em> Slower Frame Rate </em></h3> </div>
+                <h4 style="text-align:center"> Specific Code </h4>
+                    <img class="center" style="border: 2px solid black" src="images/frameratecode.png">
+                    <p class="how">A second major choice I made in this project is decreasing the frame rate of the draw function, so the various shades of blue looped within the draw function occur at a slower rate. When you reference my generative art in the first section of this webpage, you will notice that the raindrops alternate blue shades at a moderate speed. If the frame rate was not changed, the raindrops would appear to be blinking random blue shades rapidly. I made this decision because I wanted the viewers to have more time to observe each color and avoid hurting their eyes when interacting with my art. As a result, I used the code <strong>frameRate(10); </strong> to reduce the rate from 60 to 10 times per second.</p>
+      <!--Section 4-->
+        <h2 style="border: 3px solid black"> My Afterthought </h2>
+            <p class="how"> This Generative Art project has allowed me use my programming knowledge to form a creative art piece that conveys the specific emotion of sadness. Before this project, I never connected the idea that something as digital and systematic as programming can be used to create art. This experience taught me that programming and art can be combined to form various artworks, and I am finding myself more interested in programming now that I have seen it from a different perspective. I believe this project as a whole has deepen my connection with programming as well as helped me understand that art can be anything that a person wants regardless of its form or meaning. Lastly, if I had more time to create my generative art, I would have added more designs to my art piece to detail the scenery. I would also dedicate time towards learning how arrays work and incorporate it into my art piece by making raindrops fall towards the grass. <br></p>
+            <p>&#8291;</p>
+</body>
+
+</html>

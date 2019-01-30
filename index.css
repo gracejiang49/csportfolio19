@@ -1,0 +1,55 @@
+h1,h2 {
+    text-align:center;
+}
+
+h1 {
+    background-color:#D5C6E0;
+} 
+h2 {
+    background-color:#F5E6E8;
+}
+h3 {
+    margin-left: 230px;
+    background-color:#F5E6E8;
+}
+.row-container > *{
+    display:inline-block;
+    vertical-align: top;
+}
+
+td {
+    padding-left:20px;
+}
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/purple-pink-white-checkered-diaganal-cube-background-pattern-purple-pink-white-checkered-background-patterns-107045747.jpg);
+    width:870px;
+    margin:auto;
+    background-attachment:fixed;
+}
+
+#navbar {
+    background-color:#bda2e8;
+    border:2px solid;
+    text-align:center;
+    padding:10px;
+}
+
+#navbar a { 
+    padding:5px;
+    background-color:#bda2e8;
+    color: black;
+    
+}
+
+#navbar a:hover{
+    background-color:#d8c6f4;
+}
+
+#navbar li {
+    display:inline-block;
+}
+    
+#output-canvas {
+    margin-left: 235px;
+    
+}

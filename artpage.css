@@ -1,0 +1,115 @@
+#navbar {
+    background-color:#458bf9;
+    border:2px solid;
+    text-align:center;
+    padding:10px;
+}
+
+#navbar a { 
+    padding:5px;
+    background-color:#458bf9;
+    color: black;
+    
+}
+#navbar a:hover{
+    background-color:#a2c3f9;
+}
+
+#navbar li {
+    display:inline-block;
+}
+
+h1,h2, h3{
+    text-align:center;
+}
+
+body{
+    background-image: url(https://image.freepik.com/free-vector/blue-geometric-abstract-chaotic-triangle-pattern-background-mosaic-vector-graphic-design_1164-1491.jpg);
+    width:950px;
+    margin:auto;
+    background-attachment:fixed;
+}
+
+h1{
+    background-color:#92bff4;
+}
+
+h2{
+    background-color:#bad9ff;
+}
+
+#image-howTo {
+    text-align:left;
+}
+
+.how-to1 {
+    display: inline-block;
+    width: auto;
+    text-align:center;
+    
+}
+.center {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.how{
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: center;
+}
+
+.work {
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+}
+
+#sub2 {
+    margin-bottom: 20px;
+}
+
+#sub3 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    display:inline-block;
+    padding:0 15px;
+    position: relative;
+}
+
+h3:before, 
+h3:after {
+    background: #000000;
+    content:"";
+    display:block;
+    height:1px;
+    position:absolute;
+    top:50%;
+    width:200%;
+}
+
+h3:before{
+    right:100%;
+}
+
+h3:after{
+    left:100%;
+}
+
+.container {
+    overflow:hidden;
+    text-align:center;
+}
+
+#output-canvas {
+    width:500px;
+    margin-left: 225px;
+}
+
+.centerimg {
+    width: 35%;
+    display: inline-block;
+}
